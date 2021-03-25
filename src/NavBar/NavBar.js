@@ -7,13 +7,13 @@ class NavBar extends React.Component {
       <div>
         <ul>
           <li>
-            <Link to=''>Hello World</Link>
+            <Link to='/'>Hello World</Link>
           </li>
           <li>
-            <Link to=''>User Posts</Link>
+            <Link to='/posts'>User Posts</Link>
           </li>
           <li>
-            <Link to=''>Create Post</Link>
+            <Link to='/add-post'>Create Post</Link>
           </li>
         </ul>
       </div>
