@@ -4,8 +4,25 @@ import DATA from './data'
 
 import NavBar from './NavBar/NavBar'
 import LandingPage from './LandingPage/LandingPage'
+import UserPosts from './UserPosts/UserPosts'
 
 class App extends React.Component {
+
+  renderRoutes () {
+    return (
+      <div>
+        <Route 
+          exact
+          path='/'
+          component={LandingPage}
+        />
+        <Route 
+          path='/posts'
+          component={UserPosts}
+        />
+      </div>
+    )
+  }
 
   render() {
     console.log(DATA[0].nickname)
@@ -15,7 +32,7 @@ class App extends React.Component {
           <NavBar />
         </nav>
         <main>
-          <LandingPage />
+          {this.renderRoutes()}
         </main>
       </div>
     )
