@@ -15,7 +15,7 @@ class App extends React.Component {
           <NavBar />
         </nav>
         <main>
-
+          <LandingPage />
         </main>
       </div>
     )

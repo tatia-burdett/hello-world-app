@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class NavBar extends React.Component {
   render() {
@@ -6,13 +7,13 @@ class NavBar extends React.Component {
       <div>
         <ul>
           <li>
-            <a href='index.html'>Hello World</a>
+            <Link to=''>Hello World</Link>
           </li>
           <li>
-            <a href='main.html'>User Posts</a>
+            <Link to=''>User Posts</Link>
           </li>
           <li>
-            <a href='form.html'>Create Post</a>
+            <Link to=''>Create Post</Link>
           </li>
         </ul>
       </div>
