@@ -23,3 +23,8 @@
 .landing-sections-content p, .landing-sections-content blockquote {
   padding: 0 10px;
 }
+
+blockquote {
+  color: #2e2e2e;
+  font-style: italic;
+}

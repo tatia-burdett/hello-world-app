@@ -10,7 +10,7 @@ class Sections extends React.Component {
           <div className='landing-sections-content'>
             <p>Share something to the world and filter through posts that belong to others.</p>
             <p><em>Placeholder for studies on sharing for mental health</em></p>
-            <p><em>Placeholder for quote on connection</em></p>
+            <p><em>Placeholder for icon / image</em></p>
           </div>
         </section>
         <section className='landing-sections'>
