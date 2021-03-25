@@ -4,7 +4,7 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <ul class='nav-links'>
+        <ul>
           <li>
             <a href='index.html'>Hello World</a>
           </li>
