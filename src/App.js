@@ -5,6 +5,7 @@ import DATA from './data'
 import NavBar from './NavBar/NavBar'
 import LandingPage from './LandingPage/LandingPage'
 import UserPosts from './UserPosts/UserPosts'
+import PostForm from './PostForm/PostForm'
 
 class App extends React.Component {
 
@@ -19,6 +20,10 @@ class App extends React.Component {
         <Route 
           path='/posts'
           component={UserPosts}
+        />
+        <Route 
+          path='/add-post'
+          component={PostForm}
         />
       </div>
     )
