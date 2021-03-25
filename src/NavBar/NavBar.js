@@ -5,8 +5,8 @@ import './NavBar.css'
 class NavBar extends React.Component {
   render() {
     return (
-      <div>
-        <ul>
+      <div className='nav-bar'>
+        <ul className='nav-links'>
           <li>
             <Link to='/'>Hello World</Link>
           </li>
