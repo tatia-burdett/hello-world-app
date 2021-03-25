@@ -1,0 +1,25 @@
+.landing-sections {
+  background-color: #d9d9d9;
+  min-height: 200px;
+}
+
+.landing-sections:nth-child(even) {
+  background-color: #adadad;
+}
+
+.landing-sections-header {
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+}
+
+.landing-sections-content {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.landing-sections-content p, .landing-sections-content blockquote {
+  padding: 0 10px;
+}

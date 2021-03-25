@@ -2,6 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 
 import EnterButton from './EnterButton/EnterButton'
+import Sections from './Sections/Sections'
 
 class LandingPage extends React.Component {
   render() {
@@ -14,9 +15,9 @@ class LandingPage extends React.Component {
             <EnterButton />
           </div>
         </header>
-        <section>
-
-        </section>
+        <div>
+          <Sections />
+        </div>
       </div>
     )
   }
