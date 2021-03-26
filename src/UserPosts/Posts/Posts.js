@@ -9,15 +9,17 @@ class Posts extends React.Component {
     const posted = this.context.posted
 
     return (
-      <div className='post-card-grid'>
-        {posted.map(post =>
-          <div className='post-card' key={post.id}>
-            <h3>{post.nickname}</h3>
-            <p>{post.location}</p>
-            <p className='date-posted'>{post.date_posted}</p>
-            <p className='post-content'>{post.content}</p>
-          </div>
-        )}
+      <div>
+        <section className='post-card-grid'>
+          {posted.map(post =>
+            <div className='post-card' key={post.id}>
+              <h3>{post.nickname}</h3>
+              <p>{post.location}</p>
+              <p className='date-posted'>{post.date_posted}</p>
+              <p className='post-content'>{post.content}</p>
+            </div>
+          )}
+        </section>
       </div>
     )
   }
