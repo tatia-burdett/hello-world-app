@@ -1,0 +1,18 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+fieldset label {
+  padding: 10px 0;;
+}
+
+fieldset textarea {
+  max-width: 75vw;
+}
+
+.submit-btn {
+  width: max-content;
+  margin-top: 10px;
+}

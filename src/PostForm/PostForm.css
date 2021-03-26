@@ -1,0 +1,13 @@
+.post-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-form-header {
+  text-align: center;
+}
+
+.post-form-form {
+  max-width: 75vw;
+}
