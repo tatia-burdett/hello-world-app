@@ -9,7 +9,7 @@ class Sections extends React.Component {
           <h3 className='landing-sections-header'>Anonymously share your thoughts, frustrations, and successes!</h3>
           <div className='landing-sections-content'>
             <p>Share something to the world and filter through posts. Feel closer and more connected to others through similar thoughts, frustrations and successes!</p>
-            <p><em>A 2017 study by Julianne Holt-Lunstad, PhD in the <a href='https://academic.oup.com/ppar/article/27/4/127/4782506?login=true'>Public Policy & Aging Report</a> (January, 2018) found that lack of social connection can affect us negatively in similar ways as smoking up to 15 cigarettes a day and obesity. Mental health can also suffer, leading to depression, cognitive decline and even dementia.</em></p>
+            <p><em>A 2017 study by Julianne Holt-Lunstad, PhD in the <a href='https://academic.oup.com/ppar/article/27/4/127/4782506?login=true' target="_blank" rel='noreferrer'>Public Policy & Aging Report</a> (January, 2018) found that lack of social connection can affect us negatively in similar ways as smoking up to 15 cigarettes a day and obesity. Mental health can also suffer, leading to depression, cognitive decline and even dementia.</em></p>
           </div>
         </section>
         <section className='landing-sections'>
