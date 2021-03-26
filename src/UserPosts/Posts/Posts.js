@@ -14,8 +14,8 @@ class Posts extends React.Component {
           <div className='post-card' key={post.id}>
             <h3>{post.nickname}</h3>
             <p>{post.location}</p>
-            <p>{post.content}</p>
-            <p>{post.date_posted}</p>
+            <p className='date-posted'>{post.date_posted}</p>
+            <p className='post-content'>{post.content}</p>
           </div>
         )}
       </div>
