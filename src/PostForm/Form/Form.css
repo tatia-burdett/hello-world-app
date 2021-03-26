@@ -16,3 +16,5 @@ fieldset textarea {
   width: max-content;
   margin-top: 10px;
 }
+
+/* Add responsive styling to fieldset - on larger screens, fieldset max-width should shrink. */
