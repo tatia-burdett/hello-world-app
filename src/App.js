@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Link} from 'react-router-dom'
 import DATA from './data'
 import './App.css'
+import PostsContext from './PostsContext'
 
 import NavBar from './NavBar/NavBar'
 import LandingPage from './LandingPage/LandingPage'
@@ -31,16 +32,20 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(DATA[0].nickname)
+    const value = {
+      posted: DATA
+    }
     return (
-      <div>
-        <nav>
-          <NavBar />
-        </nav>
-        <main>
-          {this.renderRoutes()}
-        </main>
-      </div>
+      <PostsContext.Provider value={value}>
+        <div>
+          <nav>
+            <NavBar />
+          </nav>
+          <main>
+            {this.renderRoutes()}
+          </main>
+        </div>
+      </PostsContext.Provider>
     )
   }
 }
