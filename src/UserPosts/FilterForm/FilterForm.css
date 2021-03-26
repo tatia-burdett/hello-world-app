@@ -1,0 +1,19 @@
+.filter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-field {
+  max-width: 30vw;
+  display: flex;
+  align-items: center;
+}
+
+.form-field label {
+  display: none;
+}
+
+.form-field legend {
+  padding-right: 10px;
+}
