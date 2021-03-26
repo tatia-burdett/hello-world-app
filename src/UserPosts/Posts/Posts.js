@@ -13,7 +13,9 @@ class Posts extends React.Component {
         {posted.map(post =>
           <div className='post-card' key={post.id}>
             <h3>{post.nickname}</h3>
-            <p></p>
+            <p>{post.location}</p>
+            <p>{post.content}</p>
+            <p>{post.date_posted}</p>
           </div>
         )}
       </div>
