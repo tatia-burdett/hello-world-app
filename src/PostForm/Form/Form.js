@@ -9,13 +9,13 @@ class Form extends React.Component {
           <fieldset>
             <legend>Create a Post!</legend>
 
-            <label for='nickname'>Name or Nickname:</label>
+            <label htmlFor='nickname'>Name or Nickname:</label>
             <input type='text' id='nickname' name='user' placeholder='Dr. Who' required/>
 
-            <label for='location'>Location:</label>
+            <label htmlFor='location'>Location:</label>
             <input type='text' id='location' name='user' placeholder='Gallifrey'/>
 
-            <label for='content'>Say something:</label>
+            <label htmlFor='content'>Say something:</label>
             <textarea id='content' name='user' required/>
 
             <button className='submit-btn'>Submit</button>

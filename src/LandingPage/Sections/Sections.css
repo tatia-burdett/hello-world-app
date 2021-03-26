@@ -22,6 +22,7 @@
 
 .landing-sections-content p, .landing-sections-content blockquote {
   padding: 0 10px;
+  line-height: 1.5;
 }
 
 blockquote {

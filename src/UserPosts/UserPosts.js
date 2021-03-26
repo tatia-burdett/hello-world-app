@@ -12,6 +12,9 @@ class UserPosts extends React.Component {
           <h2>Here is what you have to say...</h2>
         </header>
         <section>
+          
+        </section>
+        <section>
           <Posts />
         </section>
       </div>
