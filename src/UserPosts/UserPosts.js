@@ -1,18 +1,15 @@
 import React from 'react'
 import './UserPosts.css'
-import PostsContext from '../PostsContext'
 
 import Posts from './Posts/Posts'
 
 class UserPosts extends React.Component {
-  static contextType = PostsContext
-
   render() {
-    console.log(this.context.posted[0].nickname)
     return (
       <div>
         <header>
-          <h1>Here's what the world has to say...</h1>
+          <h1>Hello World</h1>
+          <h2>Here is what you have to say...</h2>
         </header>
         <section>
           <Posts />
