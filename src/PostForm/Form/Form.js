@@ -4,9 +4,9 @@ import './Form.css'
 class Form extends React.Component {
   render() {
     return (
-      <div className='form-field'>
+      <div className='post-form-field'>
         <form>
-          <fieldset>
+          <fieldset className='post-fieldset'>
             <legend>Create a Post!</legend>
 
             <label htmlFor='nickname'>Name or Nickname:</label>

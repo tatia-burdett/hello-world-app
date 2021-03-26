@@ -1,14 +1,14 @@
-fieldset {
+.post-fieldset {
   display: flex;
   flex-direction: column;
   width: 50vw;
 }
 
-fieldset label {
+.post-fieldset label {
   padding: 10px 0;;
 }
 
-fieldset textarea {
+.post-fieldset textarea {
   max-width: 75vw;
 }
 
