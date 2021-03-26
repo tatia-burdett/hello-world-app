@@ -1,5 +1,7 @@
 import React from 'react'
 import './LandingPage.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 import EnterButton from './EnterButton/EnterButton'
 import Sections from './Sections/Sections'
@@ -14,9 +16,12 @@ class LandingPage extends React.Component {
             <h1>Hello World</h1>
             <h2>An anonymous group journal. Share openly.</h2>
             <EnterButton />
+            <a href='#sections'>
+              <FontAwesomeIcon icon={faChevronDown} className='down-icon'/>
+            </a>
           </div>
         </header>
-        <div>
+        <div id='sections'>
           <Sections />
         </div>
         <footer>
