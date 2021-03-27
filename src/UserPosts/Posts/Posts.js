@@ -17,7 +17,6 @@ class Posts extends React.Component {
 
     return (
       <div>
-        {/* Ideally would LOVE to randomly place each on the screen, even overlapping eachother. */}
         <section className='post-card-grid'>
           {posted.map(post =>
             <div className='post-card' key={post.id}>

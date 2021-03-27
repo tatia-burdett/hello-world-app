@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import DATA from './data'
 import './App.css'
 import PostsContext from './PostsContext'
