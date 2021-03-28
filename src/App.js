@@ -11,6 +11,8 @@ import UserPosts from './UserPosts/UserPosts'
 import PostForm from './PostForm/PostForm'
 
 class App extends React.Component {
+  // TO DO:
+  // Hook up API_ENDPOINT, set up state and fetch calls... write filter form and functions... add notecard comment colors... 
 
   renderRoutes () {
     return (
