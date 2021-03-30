@@ -66,7 +66,7 @@ class App extends React.Component {
 
   render() {
     const value = {
-      posted: DATA
+      posted: this.state.comment
     }
     return (
       <PostsContext.Provider value={value}>
