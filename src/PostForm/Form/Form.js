@@ -5,69 +5,36 @@ import PostsContext from '../../PostsContext'
 
 class Form extends React.Component {
   // button on submit, updates state
-  constructor(props) {
-    super(props)
-    this.state = {
-      nickname: {
-        value: ''
-      },
-      user_location: {
-        value: ''
-      },
-      content: {
-        value: ''
-      }
-    }
-  }
-
   static contextType = PostsContext
-
-  updateName = (nickname) => {
-    this.setState({
-      nickname: {
-        value: nickname
-      }
-    })
-  }
-
-  updateLocation = (user_location) => {
-    this.setState({
-      value: user_location
-    })
-  }
-
-  updateContent = (content) => {
-    this.setState({
-      value: content
-    })
-  }
 
   handleSubmit = (event) => {
     event.preventDefault()
-    const nickname = this.state.nickname.value
-    const user_location = this.state.user_location.value
-    const content = this.state.content.value
-    console.log(`${nickname}, ${user_location}, ${content}`)
+    const { nickname, user_location, content } = event.target
+    const comment = {
+      nickname: nickname.value,
+      user_location: user_location.value,
+      content: content.value
+    }
 
     const requestOptions = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        nickname: `${nickname}`,
-        user_location: `${user_location}`,
-        content: `${content}`
-      })
+      body: JSON.stringify(comment)
     }
 
-    fetch(`${config.API_ENDPOINT}/comment/`, requestOptions)
+    fetch(`${config.API_ENDPOINT}/comment`, requestOptions)
       .then(res => {
         if (!res.ok) {
           throw new Error('Oh no! Something went wrong! Try again later.')
         }
         return res.json()
       })
-      .then(() => {
-        this.context.fetchComment()
+      .then((data) => {
+        nickname.value = ''
+        user_location.value = ''
+        content.value = ''
+        this.context.addComment(data)
+        this.props.history.goBack()
       })
       .catch(error => {
         this.setState({error})
@@ -85,27 +52,27 @@ class Form extends React.Component {
             <input 
               type='text' 
               id='nickname' 
-              name='user' 
+              name='nickname' 
               placeholder='Dr. Who' 
-              onChange={e => this.updateName(e.target.value)}
+              // onChange={e => this.updateName(e.target.value)}
               required
             />
 
-            <label htmlFor='location'>Location:</label>
+            <label htmlFor='user_location'>Location:</label>
             <input 
               type='text' 
-              id='location' 
-              name='user' 
+              id='user_location' 
+              name='user_location' 
               placeholder='Gallifrey'
-              onChange={e => this.updateLocation(e.target.value)}
+              // onChange={e => this.updateLocation(e.target.value)}
             />
 
             <label htmlFor='content'>Say something:</label>
             <textarea 
               type='text'
               id='content' 
-              name='user' 
-              onChange={e => this.updateContent(e.target.value)}
+              name='content' 
+              // onChange={e => this.updateContent(e.target.value)}
               required
             />
 

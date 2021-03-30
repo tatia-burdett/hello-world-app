@@ -21,6 +21,12 @@ class App extends React.Component {
     }
   }
 
+  addComment = comment => {
+    this.setState({
+      comment: [...this.state.comment, comment]
+    })
+  }
+
   componentDidMount() {
     this.fetchAllData()
   }
@@ -30,7 +36,6 @@ class App extends React.Component {
       this.fetchComment()
     ])
       .then(([comment]) => {
-        console.log(comment)
         this.setState({
           comment
         })
@@ -68,7 +73,8 @@ class App extends React.Component {
   render() {
     const value = {
       posted: this.state.comment,
-      fetchComment: this.fetchComment
+      fetchComment: this.fetchComment,
+      addComment: this.addComment
     }
     return (
       <PostsContext.Provider value={value}>
