@@ -16,7 +16,8 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      comment: []
+      comment: [],
+      error: null
     }
   }
 
@@ -66,7 +67,8 @@ class App extends React.Component {
 
   render() {
     const value = {
-      posted: this.state.comment
+      posted: this.state.comment,
+      fetchComment: this.fetchComment
     }
     return (
       <PostsContext.Provider value={value}>

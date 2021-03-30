@@ -1,5 +1,7 @@
 import React from 'react'
 import './Form.css'
+import config from '../../config'
+import PostsContext from '../../PostsContext'
 
 class Form extends React.Component {
   // button on submit, updates state
@@ -17,6 +19,8 @@ class Form extends React.Component {
       }
     }
   }
+
+  static contextType = PostsContext
 
   updateName = (nickname) => {
     this.setState({
@@ -38,14 +42,42 @@ class Form extends React.Component {
     })
   }
 
-  handleSubmit = () => {
+  handleSubmit = (event) => {
+    event.preventDefault()
+    const nickname = this.state.nickname.value
+    const user_location = this.state.user_location.value
+    const content = this.state.content.value
+    console.log(`${nickname}, ${user_location}, ${content}`)
 
+    const requestOptions = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        nickname: `${nickname}`,
+        user_location: `${user_location}`,
+        content: `${content}`
+      })
+    }
+
+    fetch(`${config.API_ENDPOINT}/comment/`, requestOptions)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Oh no! Something went wrong! Try again later.')
+        }
+        return res.json()
+      })
+      .then(() => {
+        this.context.fetchComment()
+      })
+      .catch(error => {
+        this.setState({error})
+      })
   }
 
   render() {
     return (
       <div className='post-form-field'>
-        <form>
+        <form onSubmit={e => this.handleSubmit(e)}>
           <fieldset className='post-fieldset'>
             <legend>Create a Post!</legend>
 
@@ -77,7 +109,11 @@ class Form extends React.Component {
               required
             />
 
-            <button className='submit-btn'>Submit</button>
+            <button 
+              type='submit' 
+              className='submit-btn'>
+                Submit
+            </button>
           </fieldset>
         </form>
       </div>
