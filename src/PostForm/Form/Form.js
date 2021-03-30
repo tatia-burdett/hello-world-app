@@ -2,9 +2,9 @@ import React from 'react'
 import './Form.css'
 import config from '../../config'
 import PostsContext from '../../PostsContext'
+import { withRouter } from 'react-router-dom'
 
 class Form extends React.Component {
-  // button on submit, updates state
   static contextType = PostsContext
 
   handleSubmit = (event) => {
@@ -34,7 +34,7 @@ class Form extends React.Component {
         user_location.value = ''
         content.value = ''
         this.context.addComment(data)
-        this.props.history.goBack()
+        this.props.history.push('/posts')
       })
       .catch(error => {
         this.setState({error})
@@ -88,4 +88,4 @@ class Form extends React.Component {
   }
 }
 
-export default Form
+export default withRouter(Form)
