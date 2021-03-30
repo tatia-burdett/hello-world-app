@@ -8,7 +8,12 @@ class FilterForm extends React.Component {
         <form className='form-field'>
           <legend>Filter Posts: </legend>
           <label htmlFor='search'>Search</label>
-          <input type='text' id='search' name='filter' placeholder='Seach posts by'/>
+          <input 
+            type='text' 
+            id='search' 
+            name='filter' 
+            placeholder='Seach posts by'
+          />
         </form>
       </div>
     )
