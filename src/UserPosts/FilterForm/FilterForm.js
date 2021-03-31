@@ -5,9 +5,7 @@ import PostsContext from '../../PostsContext'
 class FilterForm extends React.Component {
   static contextType = PostsContext
 
-  handleFilterCategory = (event) => {
-
-  }
+  // update state when option is selected. Maybe have filteredComments state array. If filterComments === display filterComments... if not, display comments? filterComments.category === comments.category? 
 
   render() {
     return (
