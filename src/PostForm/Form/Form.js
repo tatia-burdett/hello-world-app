@@ -9,11 +9,12 @@ class Form extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    const { nickname, user_location, content } = event.target
+    const { nickname, user_location, content, category } = event.target
     const comment = {
       nickname: nickname.value,
       user_location: user_location.value,
-      content: content.value
+      content: content.value,
+      category: category.value
     }
 
     const requestOptions = {
@@ -33,6 +34,7 @@ class Form extends React.Component {
         nickname.value = ''
         user_location.value = ''
         content.value = ''
+        category.value = ''
         this.context.addComment(data)
         this.props.history.push('/posts')
       })
@@ -66,6 +68,19 @@ class Form extends React.Component {
               placeholder='Gallifrey'
               // onChange={e => this.updateLocation(e.target.value)}
             />
+
+            <label htmlFor='category'>Category:</label>
+            <select
+              id='category'
+              name='category'
+              required
+            >
+              <option value='none'>Select One:</option>
+              <option value='expression'>Expression</option>
+              <option value='release'>Release</option>
+              <option value='rejoice'>Rejoice</option>
+              <option value='embrace'>Embrace</option>
+            </select>
 
             <label htmlFor='content'>Say something:</label>
             <textarea 
