@@ -2,6 +2,11 @@ import React from 'react'
 import './FilterForm.css'
 
 class FilterForm extends React.Component {
+
+  handleFilterByCategory = () => {
+    
+  }
+
   render() {
     return (
       <div className='filter-form'>
