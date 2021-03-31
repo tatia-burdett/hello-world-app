@@ -22,7 +22,9 @@ class Posts extends React.Component {
             <div className='post-card' key={post.id}>
               <h3>{post.nickname}</h3>
               <p>{post.location}</p>
+              <p className='post-location'>{post.user_location}</p>
               <p className='date-posted'>{post.date_posted}</p>
+              <p className='post-category'>{post.category}</p>
               <p className='post-content'>{post.content}</p>
             </div>
           )}

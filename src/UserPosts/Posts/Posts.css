@@ -11,7 +11,7 @@
   border: 1px solid black;
 }
 
-.date-posted {
+.date-posted, .post-category, .post-location {
   font-style: italic;
   color: #686868
 }
