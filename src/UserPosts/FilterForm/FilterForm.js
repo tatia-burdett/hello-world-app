@@ -1,7 +1,13 @@
 import React from 'react'
 import './FilterForm.css'
+import PostsContext from '../../PostsContext'
 
 class FilterForm extends React.Component {
+  static contextType = PostsContext
+
+  handleFilterCategory = (event) => {
+
+  }
 
   render() {
     return (
@@ -9,12 +15,13 @@ class FilterForm extends React.Component {
         <form className='form-field'>
           <legend>Filter Posts: </legend>
           <label htmlFor='search'>Search</label>
-          <input 
-            type='text' 
-            id='search' 
-            name='filter' 
-            placeholder='Seach posts by'
-          />
+          <select>
+            <option value='none'>All</option>
+            <option value='expression'>Expressions</option>
+            <option value='release'>Releases</option>
+            <option value='rejoice'>Rejoices</option>
+            <option value='embrace'>Embraces</option>
+          </select>
         </form>
       </div>
     )

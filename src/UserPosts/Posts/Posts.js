@@ -11,9 +11,7 @@ class Posts extends React.Component {
       posted.sort((a, b) => {
         return new Date(b.date_posted) - new Date(a.date_posted)
       })
-    } else {
-      return 'loading'
-    }
+    } 
 
     return (
       <div>
