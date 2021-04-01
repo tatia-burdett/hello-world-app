@@ -7,7 +7,7 @@ import { withRouter } from 'react-router-dom'
 class Form extends React.Component {
   static contextType = PostsContext
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault()
     const { nickname, user_location, content, category } = event.target
     const comment = {

@@ -6,12 +6,17 @@ class Posts extends React.Component {
   static contextType = PostsContext
 
   render() {
-    const posted = this.context.posted
+    const filteredComment = this.context.filteredComment
+    const comment = this.context.comment
+    const posted = filteredComment.length >= 1 ? filteredComment : comment
+
     if (posted) {
       posted.sort((a, b) => {
         return new Date(b.date_posted) - new Date(a.date_posted)
       })
-    } 
+    }
+
+
 
     return (
       <div>
