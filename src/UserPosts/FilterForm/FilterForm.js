@@ -6,8 +6,9 @@ class FilterForm extends React.Component {
   static contextType = PostsContext
 
   handleFilter = event => {
-    const category = event.target.value
+    let category = event.target.value
     this.context.filterComments(category)
+    event.target = null
   }
 
   render() {
@@ -23,9 +24,6 @@ class FilterForm extends React.Component {
             <option value='rejoice'>Rejoices</option>
             <option value='embrace'>Embraces</option>
           </select>
-          {/* <button type='submit'>
-            Filter
-          </button> */}
         </form>
       </div>
     )

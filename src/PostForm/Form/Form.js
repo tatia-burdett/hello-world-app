@@ -56,7 +56,6 @@ class Form extends React.Component {
               id='nickname' 
               name='nickname' 
               placeholder='Dr. Who' 
-              // onChange={e => this.updateName(e.target.value)}
               required
             />
 
@@ -66,7 +65,6 @@ class Form extends React.Component {
               id='user_location' 
               name='user_location' 
               placeholder='Gallifrey'
-              // onChange={e => this.updateLocation(e.target.value)}
             />
 
             <label htmlFor='category'>Category:</label>
@@ -87,7 +85,6 @@ class Form extends React.Component {
               type='text'
               id='content' 
               name='content' 
-              // onChange={e => this.updateContent(e.target.value)}
               required
             />
 
