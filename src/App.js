@@ -21,7 +21,6 @@ class App extends React.Component {
   }
 
   filterComments = category => {
-    console.log(category)
     let filtered = this.state.comment
     filtered = filtered.filter(comment => 
        comment.category === category

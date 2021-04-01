@@ -6,9 +6,9 @@ class FilterForm extends React.Component {
   static contextType = PostsContext
 
   handleFilter = event => {
-    let category = event.target.value
+    const selectedCategory = event.target
+    const category = selectedCategory.value
     this.context.filterComments(category)
-    event.target = null
   }
 
   render() {
