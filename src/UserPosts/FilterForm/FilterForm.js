@@ -11,6 +11,9 @@ class FilterForm extends React.Component {
     this.context.filterComments(category)
   }
 
+  // Consider using onclick and seeing if that will fix the problem.
+  // Maybe add one more filter / search? 
+
   render() {
     return (
       <div className='filter-form'>
