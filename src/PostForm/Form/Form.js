@@ -68,6 +68,7 @@ class Form extends React.Component {
             />
 
             <label htmlFor='category'>Category:</label>
+
             <select
               id='category'
               name='category'
