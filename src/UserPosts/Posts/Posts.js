@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Posts.css'
 import PostsContext from '../../PostsContext'
 
@@ -26,6 +27,7 @@ class Posts extends React.Component {
               <p className='date-posted'>{post.date_posted}</p>
               <p className='post-category'>{post.category}</p>
               <p className='post-content'>{post.content}</p>
+              <Link to={`/posts/${post.id}`}><button>View Post</button></Link>
             </div>
           )}
         </section>
