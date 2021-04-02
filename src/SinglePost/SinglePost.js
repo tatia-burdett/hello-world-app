@@ -1,5 +1,6 @@
 import React from 'react'
 import PostsContext from '../PostsContext'
+import './SinglePost.css'
 
 class SinglePost extends React.Component {
   static defaultProps = {
@@ -21,7 +22,7 @@ class SinglePost extends React.Component {
     const singleComment = comment.find(post => post.id === idInt) || {content: ''}
 
     return (
-      <div>
+      <div className='single-post-container'>
         <h3>{singleComment.nickname}</h3>
         <p>{singleComment.user_location}</p>
         <p>{singleComment.date_posted}</p>

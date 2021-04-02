@@ -1,0 +1,16 @@
+.single-post-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -75px;
+}
+
+.single-post-container h3, .single-post-container p {
+  margin: 0;
+}
+
+.single-post-container p {
+  padding: 5px;
+}
