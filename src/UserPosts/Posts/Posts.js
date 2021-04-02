@@ -16,8 +16,6 @@ class Posts extends React.Component {
       })
     }
 
-
-
     return (
       <div>
         <section className='post-card-grid'>

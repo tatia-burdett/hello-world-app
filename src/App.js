@@ -1,6 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom'
-import DATA from './data'
+import {Route, Switch} from 'react-router-dom'
 import './App.css'
 import PostsContext from './PostsContext'
 import config from './config'
@@ -9,6 +8,7 @@ import NavBar from './NavBar/NavBar'
 import LandingPage from './LandingPage/LandingPage'
 import UserPosts from './UserPosts/UserPosts'
 import PostForm from './PostForm/PostForm'
+import SinglePost from './SinglePost/SinglePost'
 
 class App extends React.Component {
   constructor(props) {
@@ -62,19 +62,25 @@ class App extends React.Component {
   renderRoutes () {
     return (
       <div>
-        <Route 
-          exact
-          path='/'
-          component={LandingPage}
-        />
-        <Route 
-          path='/posts'
-          component={UserPosts}
-        />
-        <Route 
-          path='/add-post'
-          component={PostForm}
-        />
+        <Switch>
+          <Route 
+            exact
+            path='/'
+            component={LandingPage}
+          />
+          <Route 
+            path='/posts/:id'
+            component={SinglePost}
+          />
+          <Route 
+            path='/posts'
+            component={UserPosts}
+          />
+          <Route 
+            path='/add-post'
+            component={PostForm}
+          />
+        </Switch>
       </div>
     )
   }
