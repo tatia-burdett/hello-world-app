@@ -17,7 +17,7 @@ class FilterForm extends React.Component {
         <form className='form-field'>
           <legend>Filter Posts: </legend>
           <label htmlFor='category'>Categories:</label>
-          <select id='category' onChange={e => this.handleFilter(e)}>
+          <select className='select-field' id='category' onChange={e => this.handleFilter(e)}>
             <option value='none'>All</option>
             <option value='expression'>Expressions</option>
             <option value='release'>Releases</option>
