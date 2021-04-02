@@ -3,6 +3,9 @@ import PostsContext from '../PostsContext'
 
 class SinglePost extends React.Component {
   static defaultProps = {
+    history: {
+      goBack: () => {}
+    },
     match: {
       params: {}
     }
@@ -24,6 +27,9 @@ class SinglePost extends React.Component {
         <p>{singleComment.date_posted}</p>
         <p>{singleComment.category}</p>
         <p>{singleComment.content}</p>
+        <button onClick={() => this.props.history.goBack()}>
+          Go Back
+        </button>
       </div>
     )
   }
