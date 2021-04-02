@@ -8,6 +8,14 @@
   padding: 10px 0;;
 }
 
+.post-fieldset input {
+  padding: 10px;
+}
+
+.post-fieldset input[type='text'], select:focus, button, textarea[type='text'] {
+  font-size: 16px;
+}
+
 .post-fieldset textarea {
   max-width: 75vw;
 }
