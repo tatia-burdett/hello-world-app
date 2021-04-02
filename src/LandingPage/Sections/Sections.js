@@ -9,13 +9,12 @@ class Sections extends React.Component {
           <h3 className='landing-sections-header'>Anonymously share your thoughts, frustrations, and successes!</h3>
           <div className='landing-sections-content'>
             <p>Share something to the world and filter through posts. Categorize your post as an Expression, Release, Rejoice or Embrace. Express something about yourself, like an idea or thought, or maybe just say hi! Release some negative thought that's hanging over your head. Rejoice in a recent win or success! Or maybe send a warm embrace to someone who needs it.</p>
-            <p><em>A 2017 study by Julianne Holt-Lunstad, PhD in the <a href='https://academic.oup.com/ppar/article/27/4/127/4782506?login=true' target="_blank" rel='noreferrer'>Public Policy & Aging Report</a> (January, 2018) found that lack of social connection can affect us negatively in similar ways as smoking up to 15 cigarettes a day and obesity. Mental health can also suffer, leading to depression, cognitive decline and even dementia.</em></p>
+            <p>This project was inspired by a book that I used to pass around with my friends in high school. We didn't share very many classes, but we wanted to stay connected. We kept a large, empty journal, that we would pass around between us. When it was your turn to use the journal, you could write anything you wanted, and also catch up on what everyone else was going through. This journal brought us closer together, and I hope this online journal can do something similarily.</p>
           </div>
         </section>
         <section className='landing-sections'>
           <h3 className='landing-sections-header'>Shrink the world, grow closer</h3>
           <div className='landing-sections-content'>
-            <p>The internet is a place that can bring us closer together, but it can also divide us even more. The aim of Hello World is to allow us to see that everyone is human.</p>
             <blockquote>
               “We are like islands in the sea, separate on the surface but connected in the deep.”
               ― William James   
