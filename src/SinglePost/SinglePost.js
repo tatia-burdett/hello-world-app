@@ -16,11 +16,14 @@ class SinglePost extends React.Component {
     const idInt = parseInt(id)
 
     const singleComment = comment.find(post => post.id === idInt) || {content: ''}
-    console.log(singleComment)
 
     return (
       <div>
-        <h1>{singleComment.nickname}</h1>
+        <h3>{singleComment.nickname}</h3>
+        <p>{singleComment.user_location}</p>
+        <p>{singleComment.date_posted}</p>
+        <p>{singleComment.category}</p>
+        <p>{singleComment.content}</p>
       </div>
     )
   }
