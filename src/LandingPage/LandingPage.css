@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.landing-header-content a {
+  margin-right: 35px;
+}
+
 .down-icon {
   font-size: 35px;
   position: absolute;
