@@ -7,6 +7,7 @@ class Posts extends React.Component {
   static contextType = PostsContext
 
   render() {
+    console.log(this.props)
     const filteredComment = this.context.filteredComment
     const comment = this.context.comment
     const posted = filteredComment.length >= 1 ? filteredComment : comment
