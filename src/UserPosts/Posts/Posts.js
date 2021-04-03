@@ -7,7 +7,6 @@ class Posts extends React.Component {
   static contextType = PostsContext
 
   render() {
-    console.log('posts render ran')
     const posted = this.context.comment
 
     if (posted) {

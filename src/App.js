@@ -36,7 +36,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('ran')
     this.fetchAllData()
   }
 
@@ -87,7 +86,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('render ran')
     const value = {
       comment: this.state.comment,
       fetchComment: this.fetchComment,
