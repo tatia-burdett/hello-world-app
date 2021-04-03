@@ -16,6 +16,7 @@ class App extends React.Component {
     this.state = {
       comment: [],
       error: null,
+      commentFiltered: []
     }
   }
 
@@ -25,7 +26,7 @@ class App extends React.Component {
        comment.category === category
     )
     this.setState({
-      comment: filtered
+      commentFiltered: filtered
     })
   }
 
@@ -91,6 +92,7 @@ class App extends React.Component {
       fetchComment: this.fetchComment,
       addComment: this.addComment,
       filterComments: this.filterComments,
+      commentFiltered: this.state.commentFiltered
     }
     return (
       <PostsContext.Provider value={value}>
