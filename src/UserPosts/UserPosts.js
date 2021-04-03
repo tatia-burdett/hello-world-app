@@ -6,6 +6,7 @@ import Posts from './Posts/Posts'
 
 class UserPosts extends React.Component {
   render() {
+    
     return (
       <div>
         <header className='user-post-header'>
@@ -13,10 +14,10 @@ class UserPosts extends React.Component {
           <h2>Here is what others have to say...</h2>
         </header>
         <section>
-          <FilterForm />
+          <FilterForm {...this.props}/>
         </section>
         <section>
-          <Posts />
+          <Posts {...this.props}/>
         </section>
       </div>
     )

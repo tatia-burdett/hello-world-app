@@ -65,16 +65,17 @@ class App extends React.Component {
         <Switch>
           <Route 
             exact
+            path='/posts'
+            component={UserPosts}
+          />
+          <Route 
+            exact
             path='/'
             component={LandingPage}
           />
           <Route 
             path='/posts/:id'
             component={SinglePost}
-          />
-          <Route 
-            path='/posts'
-            component={UserPosts}
           />
           <Route 
             path='/add-post'
