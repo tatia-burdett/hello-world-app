@@ -16,7 +16,6 @@ class App extends React.Component {
     this.state = {
       comment: [],
       error: null,
-      filteredComment: []
     }
   }
 
@@ -26,7 +25,7 @@ class App extends React.Component {
        comment.category === category
     )
     this.setState({
-      filteredComment: filtered
+      comment: filtered
     })
   }
 
@@ -37,6 +36,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log('ran')
     this.fetchAllData()
   }
 
@@ -86,12 +86,12 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('render ran')
     const value = {
       comment: this.state.comment,
       fetchComment: this.fetchComment,
       addComment: this.addComment,
       filterComments: this.filterComments,
-      filteredComment: this.state.filteredComment
     }
     return (
       <PostsContext.Provider value={value}>

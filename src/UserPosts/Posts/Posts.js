@@ -7,9 +7,8 @@ class Posts extends React.Component {
   static contextType = PostsContext
 
   render() {
-    const filteredComment = this.context.filteredComment
-    const comment = this.context.comment
-    const posted = filteredComment.length >= 1 ? filteredComment : comment
+    console.log('posts render ran')
+    const posted = this.context.comment
 
     if (posted) {
       posted.sort((a, b) => {
