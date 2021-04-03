@@ -15,7 +15,6 @@ class SinglePost extends React.Component {
   static contextType = PostsContext
 
   render() {
-    console.log(this.props)
     const comment = this.context.comment
     const { id } = this.props.match.params
     const idInt = parseInt(id)

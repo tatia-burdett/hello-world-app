@@ -21,7 +21,7 @@ class Posts extends React.Component {
       <div>
         <section className='post-card-grid'>
           {posted.map(post =>
-            <div className='post-card' key={post.id}>
+            <div className='post-card' key={post.id || ''}>
               <h3>{post.nickname}</h3>
               <p className='post-location'>{post.user_location}</p>
               <p className='date-posted'>{post.date_posted}</p>
