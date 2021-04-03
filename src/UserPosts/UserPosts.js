@@ -17,7 +17,7 @@ class UserPosts extends React.Component {
           <FilterForm {...this.props}/>
         </section>
         <section>
-          <Posts {...this.props}/>
+          <Posts />
         </section>
       </div>
     )
