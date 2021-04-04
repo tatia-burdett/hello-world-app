@@ -33,11 +33,26 @@
 @media all and (min-width: 600px) {
   .post-card-grid {
     grid-template-columns: repeat(2, 50%);
+    perspective: 600;
+    position: relative;
   }
 }
 
 @media all and (min-width: 850px) {
   .post-card-grid {
     grid-template-columns: repeat(3, 33%);
+    perspective: 600;
+    position: relative;
+  }
+
+  .post-card {
+    transition-property: background, border-radius;
+    transition-duration: .3s, 2s;
+    transition-timing-function: linear, ease-in-out;
+    transition-delay: 0s, 2s;
+  }
+
+  .post-card:hover {
+    background: #9CB0EF;
   }
 }
