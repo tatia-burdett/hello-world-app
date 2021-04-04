@@ -23,15 +23,17 @@ class SinglePost extends React.Component {
     const singleComment = comment.find(post => post.id === idInt) || {content: ''}
 
     return (
-      <div className='single-post-container'>
-        <h2 className='sinle-nickname'>{singleComment.nickname}</h2>
-        <p className='single-location'>{singleComment.user_location}</p>
-        <Moment format='MMM D, YYYY'>{singleComment.date_posted}</Moment>
-        <p className='single-category'>{singleComment.category}</p>
-        <p className='single-content'>{singleComment.content}</p>
-        <button onClick={() => this.props.history.goBack()}>
-          Go Back
-        </button>
+      <div className='single-post-page'>
+        <section className='single-post-container'>
+          <h2 className='sinle-nickname'>{singleComment.nickname}</h2>
+          <p className='single-location'>{singleComment.user_location}</p>
+          <Moment format='MMM D, YYYY'>{singleComment.date_posted}</Moment>
+          <p className='single-category'>{singleComment.category}</p>
+          <p className='single-content'>{singleComment.content}</p>
+          <button onClick={() => this.props.history.goBack()}>
+            Go Back
+          </button>
+        </section>
       </div>
     )
   }
