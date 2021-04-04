@@ -54,5 +54,6 @@
 
   .post-card:hover {
     background: #9CB0EF;
+    transform: scale(1.03);
   }
 }
