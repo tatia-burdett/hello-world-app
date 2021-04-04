@@ -28,8 +28,21 @@
 }
 
 .landing-header-content a {
-  color: #fff;
+  color: #fcdfbc;
   margin-right: 35px;
+  text-decoration: none;
+}
+
+.landing-header-content a:visited {
+  color: #faad41;
+}
+
+.landing-header-content a:hover, .landing-header-content a:focus {
+  color: #D9B991;
+}
+
+.landing-header-content a:active {
+  color: #b6c7ff;
 }
 
 .down-icon {
