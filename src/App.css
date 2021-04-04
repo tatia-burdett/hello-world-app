@@ -15,3 +15,26 @@ p, a, blockquote, time, form {
 main {
   margin-top: 90px;
 }
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 10px 15px;
+  margin: 0;
+  background: #f6c836;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover, button:focus {
+    background: #FADD82;
+}
+
+button:active {
+  transform: scale(0.98);
+}
