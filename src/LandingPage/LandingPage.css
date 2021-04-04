@@ -20,8 +20,12 @@
 }
 
 .landing-header-content h2, h1 {
-  font-family: 'Syne Mono';
+  font-family: 'Syne Mono', monospace;
   color: #fff;
+}
+
+.landing-header-content h1 {
+  font-size: 52px;
 }
 
 .landing-header-content a {
