@@ -10,7 +10,6 @@ class UserPosts extends React.Component {
     return (
       <div>
         <header className='user-post-header'>
-          <h1>Hello World</h1>
           <h2>Here is what others have to say...</h2>
         </header>
         <section>
