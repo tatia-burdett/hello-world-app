@@ -52,3 +52,9 @@
   position: absolute;
   bottom: 0;
 }
+
+@media all and (min-width: 650px) {
+  .landing-header {
+    background-attachment: fixed;
+  }
+}
