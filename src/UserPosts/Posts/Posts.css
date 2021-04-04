@@ -8,9 +8,19 @@
 }
 
 .post-card {
-  padding: 10px;
+  padding: 15px 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background: #C0CDF5;
+}
+
+.post-card h3 {
+  font-size: 24px;
+  display: inline;
+}
+
+.post-card .post-location {
+  display: inline;
+  padding: 0 10px;
 }
 
 .post-card p {
@@ -19,16 +29,21 @@
   overflow: hidden;
 }
 
-.date-posted, .post-category, .post-location {
+.date-posted, .post-location {
   font-style: italic;
-  color: #686868
+  color: #636059;
+}
+
+.post-category {
+  font-weight: 600;
+  text-transform:capitalize;
 }
 
 .post-content {
   line-height: 1.5;
 }
 
-/* Responsive Styling */
+/* Responsive Styling - Larger Screen */
 
 @media all and (min-width: 600px) {
   .post-card-grid {
