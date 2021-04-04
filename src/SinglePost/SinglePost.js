@@ -1,6 +1,7 @@
 import React from 'react'
 import PostsContext from '../PostsContext'
 import './SinglePost.css'
+import Moment from 'react-moment'
 
 class SinglePost extends React.Component {
   static defaultProps = {
@@ -25,7 +26,7 @@ class SinglePost extends React.Component {
       <div className='single-post-container'>
         <h3>{singleComment.nickname}</h3>
         <p>{singleComment.user_location}</p>
-        <p>{singleComment.date_posted}</p>
+        <Moment format='MMM D, YYYY'>{singleComment.date_posted}</Moment>
         <p>{singleComment.category}</p>
         <p>{singleComment.content}</p>
         <button onClick={() => this.props.history.goBack()}>
