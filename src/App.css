@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Syne+Mono&display=swap');
 
+h1, h2, h3 {
+  font-family: 'Syne Mono', monospace;
+}
+
+p, a, blockquote, time {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing-header-content h1 {
+  font-size: 52px;
+}
+
 main {
   margin-top: 100px;
 }

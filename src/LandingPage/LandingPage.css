@@ -19,8 +19,7 @@
   height: 100vh;
 }
 
-.landing-header-content h2, h1 {
-  font-family: 'Syne Mono', monospace;
+.landing-header-content h2, .landing-header-content h1 {
   color: #fff;
 }
 
