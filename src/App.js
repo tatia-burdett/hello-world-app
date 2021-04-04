@@ -16,8 +16,15 @@ class App extends React.Component {
     this.state = {
       comment: [],
       error: null,
+      loading: false,
       commentFiltered: []
     }
+  }
+
+  handleLoading = () => {
+    this.setState({
+      loading: true
+    })
   }
 
   filterComments = category => {
@@ -26,12 +33,13 @@ class App extends React.Component {
        comment.category === category
     )
     this.setState({
-      commentFiltered: filtered
+      commentFiltered: filtered,
     })
   }
 
   addComment = comment => {
     this.setState({
+      loading: false,
       comment: [...this.state.comment, comment]
     })
   }
@@ -92,8 +100,10 @@ class App extends React.Component {
       fetchComment: this.fetchComment,
       addComment: this.addComment,
       filterComments: this.filterComments,
-      commentFiltered: this.state.commentFiltered
+      commentFiltered: this.state.commentFiltered,
+      handleLoading: this.handleLoading
     }
+
     return (
       <PostsContext.Provider value={value}>
         <div>
@@ -101,6 +111,7 @@ class App extends React.Component {
             <NavBar />
           </nav>
           <main>
+            {!this.state.loading ? '' : 'Loading posts...'}
             {this.renderRoutes()}
           </main>
         </div>

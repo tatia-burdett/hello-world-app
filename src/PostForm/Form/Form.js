@@ -23,6 +23,8 @@ class Form extends React.Component {
       body: JSON.stringify(comment)
     }
 
+    this.context.handleLoading()
+
     fetch(`${config.API_ENDPOINT}/comment`, requestOptions)
       .then(res => {
         if (!res.ok) {
