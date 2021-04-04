@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Posts.css'
 import PostsContext from '../../PostsContext'
+import Moment from 'react-moment'
 
 class Posts extends React.Component {
   static contextType = PostsContext
@@ -24,7 +25,7 @@ class Posts extends React.Component {
             <div className='post-card' key={post.id || ''}>
               <h3>{post.nickname}</h3>
               <p className='post-location'>{post.user_location}</p>
-              <p className='date-posted'>{post.date_posted}</p>
+              <Moment format='MMM D, YYYY'>{post.date_posted}</Moment>
               <p className='post-category'>{post.category}</p>
               <p className='post-content'>{post.content}</p>
               <Link to={`/posts/${post.id}`}><button>View Post</button></Link>
