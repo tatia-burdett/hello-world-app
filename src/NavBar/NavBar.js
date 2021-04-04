@@ -6,15 +6,13 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className='nav-bar'>
+        <h1><Link to='/' className='nav-header'>Hello World</Link></h1>
         <ul className='nav-links'>
           <li>
-            <Link to='/'>Hello World</Link>
+            <Link to='/posts'>View</Link>
           </li>
           <li>
-            <Link to='/posts'>User Posts</Link>
-          </li>
-          <li>
-            <Link to='/add-post'>Create Post</Link>
+            <Link to='/add-post'>Create</Link>
           </li>
         </ul>
       </div>
