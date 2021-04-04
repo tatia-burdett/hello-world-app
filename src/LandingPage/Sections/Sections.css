@@ -1,23 +1,41 @@
 .landing-sections {
-  background-color: #d9d9d9;
-  min-height: 200px;
+  background-color: #fff;
+  color: #000;
+  min-height: 300px;
 }
 
 .landing-sections:nth-child(even) {
-  background-color: #adadad;
+  background-image: url(/src/images/earth-1756274.jpg);
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-sections-header {
   margin: 0;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .landing-sections-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 75vw;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 1.5;
   margin: 0 auto;
+}
+
+.parallex-section-header {
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
 }
 
 .landing-sections-content p, .landing-sections-content blockquote {
@@ -26,6 +44,26 @@
 }
 
 blockquote {
-  color: #2e2e2e;
+  color: #fff;
+  font-size: 20px;
   font-style: italic;
+  font-weight: 900;
+  background-color: rgba(0,0,0,0.5);
+  border: 3px solid rgba(0,0,0,0.5);
+  border-radius: 20px;
 }
+
+hr {
+  color: #0F1F52;
+  width: 100%;
+}
+
+@media all and (min-width: 650px) {
+  .landing-sections:nth-child(even) {
+    background-attachment: fixed;
+  }
+
+  .landing-sections-content {
+    width: 75vw;
+  }
+} 
