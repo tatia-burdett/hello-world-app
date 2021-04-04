@@ -41,6 +41,7 @@
 
 .post-fieldset textarea {
   max-width: 100%;
+  height: 150px;
 }
 
 .submit-btn {
