@@ -7,10 +7,10 @@
   top: 0;
   width: 100%;
   padding: 10px 0;
-  padding-left: 40px;
 }
 
 .nav-header {
+  padding-left: 40px;
   color: #fff;
   font-size: 30px;
   margin: 0;
@@ -21,7 +21,7 @@
 .nav-links {
   display: flex;
   list-style-type: none;
-  padding-right: 45px;
+  padding-right: 40px;
 }
 
 .nav-links a {
@@ -30,6 +30,17 @@
   text-decoration: none;
   font-size: 18px;
 }
+
+.nav-links a:hover, .nav-links a:focus {
+  color: #D9B991
+}
+
+.nav-links a:active {
+  color: #b6c7ff;
+}
+
+
+/* Responsive */
 
 @media all and (min-width: 700px) {
   .nav-links a {
