@@ -24,11 +24,11 @@ class SinglePost extends React.Component {
 
     return (
       <div className='single-post-container'>
-        <h3>{singleComment.nickname}</h3>
-        <p>{singleComment.user_location}</p>
+        <h2 className='sinle-nickname'>{singleComment.nickname}</h2>
+        <p className='single-location'>{singleComment.user_location}</p>
         <Moment format='MMM D, YYYY'>{singleComment.date_posted}</Moment>
-        <p>{singleComment.category}</p>
-        <p>{singleComment.content}</p>
+        <p className='single-category'>{singleComment.category}</p>
+        <p className='single-content'>{singleComment.content}</p>
         <button onClick={() => this.props.history.goBack()}>
           Go Back
         </button>

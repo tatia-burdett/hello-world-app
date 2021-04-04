@@ -1,18 +1,30 @@
 .single-post-container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: -65px;
-  padding: 10px 100px;
+  padding: 40px 20px 20px 20px;
 }
 
-.single-post-container h3, .single-post-container p {
+.single-nickname {
+  font-size: 38px;
+}
+
+.single-location, .single-category {
   margin: 0;
 }
 
-.single-post-container p {
-  padding: 5px;
+.single-content {
   line-height: 1.5;
+}
+
+/* Responsive Styling - Desktop / Larger Screen */
+
+@media all and (min-width: 650px) {
+  .single-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 50px 20px 50px;
+  }
+
+  .single-post-container button {
+    width: max-content;
+  }
 }
