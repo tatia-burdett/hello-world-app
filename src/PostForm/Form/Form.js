@@ -50,7 +50,7 @@ class Form extends React.Component {
       <div className='post-form-field'>
         <form onSubmit={e => this.handleSubmit(e)}>
           <fieldset className='post-fieldset'>
-            <legend>Create a Post!</legend>
+            <legend>Create a Post:</legend>
 
             <label htmlFor='nickname'>Name or Nickname:</label>
             <input 

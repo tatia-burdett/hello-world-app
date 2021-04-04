@@ -4,7 +4,7 @@ h1, h2, h3 {
   font-family: 'Syne Mono', monospace;
 }
 
-p, a, blockquote, time {
+p, a, blockquote, time, form {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -13,5 +13,5 @@ p, a, blockquote, time {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 90px;
 }

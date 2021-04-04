@@ -1,13 +1,11 @@
 .post-form {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #fff;
 }
 
 .post-form-header {
   text-align: center;
-}
-
-.post-form-form {
-  max-width: 75vw;
 }

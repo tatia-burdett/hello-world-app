@@ -1,7 +1,21 @@
+.post-form-field {
+  padding: 20px;
+  border-radius: 20px;
+  background-image: url(/src/images/globe-1849404_1920.png);
+  background-position: center;
+  color: #fff;
+}
+
 .post-fieldset {
   display: flex;
   flex-direction: column;
   width: 50vw;
+  border: none;
+}
+
+.post-fieldset legend {
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .post-fieldset label {
@@ -26,7 +40,7 @@
 }
 
 .post-fieldset textarea {
-  max-width: 75vw;
+  max-width: 100%;
 }
 
 .submit-btn {
