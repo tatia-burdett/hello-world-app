@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   margin-top: -75px;
+  background-image: url(/src/images/world-140304.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .landing-header-content {
