@@ -19,11 +19,12 @@
   height: 100vh;
 }
 
-.landing-header-content h2 {
-  text-align: center;
+.landing-header-content h2, h1 {
+  color: #fff;
 }
 
 .landing-header-content a {
+  color: #fff;
   margin-right: 35px;
 }
 
