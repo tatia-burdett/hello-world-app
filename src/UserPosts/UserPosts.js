@@ -8,7 +8,7 @@ class UserPosts extends React.Component {
   render() {
     
     return (
-      <div>
+      <div className='user-post-page'>
         <header className='user-post-header'>
           <h2>Here is what others have to say...</h2>
         </header>

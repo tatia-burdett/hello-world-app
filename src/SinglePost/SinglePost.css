@@ -32,10 +32,9 @@
 
 @media all and (min-width: 800px) {
   .single-post-page {
-    background-image: url(/src/images/earth-1756274.jpg);
-    background-size: cover;
+    background-image: url(/src/images/earth-2254769.jpg);
     background-attachment: fixed;
-    background-position: right;
+    background-position: left;
   }
 
   .single-post-container {

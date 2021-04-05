@@ -1,8 +1,8 @@
 .post-form-field {
   padding: 20px;
   border-radius: 20px;
-  background-image: url(/src/images/globe-1849404_1920.png);
-  background-position: center;
+  background-image: url(/src/images/earth-2254769.jpg);
+  background-position: bottom;
   color: #fff;
 }
 
@@ -14,12 +14,20 @@
 }
 
 .post-fieldset legend {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  padding: 5px 10px;
   font-weight: 800;
   font-size: 18px;
 }
 
 .post-fieldset label {
-  padding: 10px;
+  margin: 5px 0;
+  width: max-content;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
 }
 
 .post-fieldset input {
