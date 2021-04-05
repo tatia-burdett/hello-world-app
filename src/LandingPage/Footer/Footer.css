@@ -1,6 +1,6 @@
 .landing-footer {
   background-color: #000;
-  padding: 20px 40px;
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -8,6 +8,7 @@
 .landing-footer p, .landing-footer ul {
   color: #fff;
   margin: 0;
+  padding: 0 5px;
 }
 
 .landing-footer ul li {
@@ -26,4 +27,12 @@
 
 .landing-footer ul li a:active {
   color: #b6c7ff;
+}
+
+/* Responsive - Desktop */
+
+@media all and (min-width: 700px) {
+  .landing-footer {
+    padding: 20px 40px;
+  }
 }
