@@ -4,3 +4,8 @@
   justify-content: center;
   align-items: center;
 }
+
+.user-post-header h2 {
+  padding: 5px 10px;
+  text-align: center;
+}
