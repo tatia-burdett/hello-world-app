@@ -1,12 +1,12 @@
 .single-post-page {
-  background-image: url(/src/images/earth-1756274.jpg);
-  background-size: cover;
+  background: #fff;
   min-height: 100vh;
 }
 
 .single-post-container {
   padding: 40px 20px 20px 20px;
-  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background: #C0CDF5;
 }
 
 .single-nickname {
@@ -32,14 +32,15 @@
 
 @media all and (min-width: 800px) {
   .single-post-page {
+    background-image: url(/src/images/earth-1756274.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-position: right;
   }
 
   .single-post-container {
-    background: #fff;
+    background: #C0CDF5;
     width: 50vw;
     margin: 0 auto;
-    border-left: 1px solid black;
   }
 }
