@@ -9,7 +9,7 @@
 .post-fieldset {
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 75vw;
   border: none;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .post-fieldset label {
-  padding: 10px 0;;
+  padding: 10px;
 }
 
 .post-fieldset input {
@@ -49,3 +49,11 @@
   margin-top: 10px;
 }
 
+/* Responsive - Desktop */
+
+@media all and (min-width: 700px) {
+  .post-fieldset {
+    padding: 20px;
+    width: 50vw;
+  }
+}
