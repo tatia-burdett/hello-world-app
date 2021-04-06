@@ -4,7 +4,7 @@ h1, h2, h3 {
   font-family: 'Syne Mono', monospace;
 }
 
-p, a, blockquote, time, form {
+p, a, blockquote, .moment-time, form {
   font-family: 'Montserrat', sans-serif;
 }
 
