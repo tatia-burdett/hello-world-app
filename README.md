@@ -2,7 +2,7 @@
 
 ## Summary:
 
-Hello World is a client-side React web app that allows users to view and post comments. This web app was built to use an API, which can be viewed [here](https://github.com/tatia-burdett/hello-world-api). A nickname, option location, category and some content are received from the user, and a date is created and formatted using react-moment. 
+Hello World is a client-side React web app that allows users to view and post comments. This web app was built to use an API, which can be viewed [here](https://github.com/tatia-burdett/hello-world-api), and documentation on the endpoints available are viewable at this link. This project utilizes a GET and POST endpoint only. A nickname, option location, category and some content are received from the user, and a date is created and formatted using react-moment. 
 
 ## Tech Details:
 
