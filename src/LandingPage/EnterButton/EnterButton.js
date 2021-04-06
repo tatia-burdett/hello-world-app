@@ -9,6 +9,9 @@ class EnterButton extends React.Component {
         <Link to='/posts'>
           <p>View Posts</p>
         </Link>
+        <Link to='/add-post'>
+          <p>Create Post</p>
+        </Link>
       </div>
     )
   }
