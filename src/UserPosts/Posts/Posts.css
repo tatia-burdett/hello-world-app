@@ -38,6 +38,28 @@
   line-height: 1.5;
 }
 
+.view-post-link {
+  background: #f6c836;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.view-post-link:hover, .view-post-link:focus {
+  background: #FADD82;
+}
+
+.view-post-link:active {
+  transform: scale(0.98);
+}
+
 /* Responsive Styling - Larger Screen */
 
 @media all and (min-width: 600px) {

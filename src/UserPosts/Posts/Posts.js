@@ -28,7 +28,7 @@ class Posts extends React.Component {
               <Moment format='MMM D, YYYY' className='date-posted moment-time'>{post.date_posted}</Moment>
               <p className='post-category'>{post.category}</p>
               <p className='post-content'>{post.content}</p>
-              <Link to={`/posts/${post.id}`}><button>View Post</button></Link>
+              <Link to={`/posts/${post.id}`} className='view-post-link'>View Post</Link>
             </div>
           )}
         </section>
