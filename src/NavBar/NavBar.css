@@ -17,12 +17,23 @@
   margin: 0;
   text-decoration: none;
   font-family: 'Syne Mono', monospace;
+  white-space: nowrap;
+}
+
+.nav-header h1 {
+  margin: 0;
+}
+
+.nav-header h1 a {
+  margin: 0;
 }
 
 .nav-links {
   display: flex;
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 18px;
+  padding-left: 0;
+  padding-top: 4px;
 }
 
 .nav-links a {
